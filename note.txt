@@ -1,0 +1,20 @@
+
+
+- Initialize a class
+- def __init__
+    - bias -> all the layers except the input -> a list of lists [b1,b2,b3]
+    - weights W -> dim(L+1) * dim(L) -> a list of lists -> [w1,w2,w3]..
+
+
+
+terminology:
+- pre-activation = wh_(L-1) + b
+- activation = sigmoid(pre-activation)
+
+
+cost_derivative
+ QSE-> C=1/2(ytrue-\pred y)^2
+ derivative -> ypred-ytrue
+
+when qse is the cost fn and sigmoid:
+ grad_w=a^(L-1)(z^L)(a^L - y)
